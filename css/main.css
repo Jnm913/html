@@ -1,0 +1,78 @@
+body{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+.navbar {
+    background-color: inherit;
+    color: #397a2a;
+    border: none;
+}
+
+.navbar-default .navbar-header > a {
+  color: lawngreen;
+}
+
+.navbar-default .navbar-header > a:hover,
+.navbar-default .navbar-header > a:focus {
+  color: lawngreen;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: lawngreen;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #397a2a;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #2a2a2a;
+    color: #397a2a;
+}
+
+/* continer*/
+@media (min-width: 768px) {
+    .continer {
+        max-width: 730px;
+    }
+}
+.continer-narrow > hr {
+    margin: 30px 0;
+}
+
+.container {
+    background-color: #2a2a2a;
+    color: #397a2a;
+}
+
+
+/*Jumbotron style*/
+.jumbotron {
+    text-align: center;
+    background-color: inherit;
+}
+
+.family_pic {
+    height: 286px;
+    width: 400px;
+}
+
+.my_pic {
+    height: 600px;
+    width: 400px;
+}
+
+.footer {
+    padding-top: 20px;
+    font-family:'Palatino Linotype';
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    color: #397a2a;
+
+}
