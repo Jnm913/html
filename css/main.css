@@ -10,6 +10,8 @@ body{
     border: none;
 }
 
+
+/*This is the css for the navbar hovers and links*/
 .navbar-default .navbar-header > a {
   color: lawngreen;
 }
@@ -35,6 +37,23 @@ body{
     color: #397a2a;
 }
 
+/*This is the css for the little icon the appears for small screens*/
+.navbar-default .navbar-toggle {
+    border-color: lawngreen;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #2a2a2a;
+    border-color: #397a2a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+     background-color: lawngreen;
+}
+
+
+
 /* continer*/
 @media (min-width: 768px) {
     .continer {
@@ -57,6 +76,19 @@ body{
     background-color: inherit;
 }
 
+/*phpSurvay*/
+.phpSurvay {
+    text-align: left;
+    background-color: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header {
+    text-align:center;
+}
+
+/*Picture Styles*/
 .family_pic {
     height: 286px;
     width: 400px;
@@ -67,6 +99,7 @@ body{
     width: 400px;
 }
 
+/*Footer styles*/
 .footer {
     padding-top: 20px;
     font-family:'Palatino Linotype';
@@ -74,5 +107,11 @@ body{
     font-style: italic;
     text-align: center;
     color: #397a2a;
+}
 
+/*assignments list style*/
+.assignments {
+   text-align: left;
+   font-family:'Palatino Linotype';
+   font-size: large;
 }
