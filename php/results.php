@@ -60,7 +60,7 @@
                
                // print "This is in the File: $file[0] <br />";
                
-               $fileArray = explode(" ", $file[0]);
+               $fileArray = explode(",", $file[0]);
                
                $index = 0;
                
@@ -105,16 +105,6 @@
                   if ($something != "")
                      $a4[] = $something;
                }
- 
- 
-               // while(feof($rfile) === false)
-               // {
-                  // $something = fgets($rfile);
-                  // print "value is : $something <br />";
-                  // $a4[] = $something;
-               // }
-        
-               // fclose($rfile);
               
                // setting the values
                if ($Q1 != "")
@@ -133,28 +123,28 @@
             
                $wfile = fopen($fileName, "w"); // writes and clear the file each time.
       
-               fwrite($wfile, "a1 ");
+               fwrite($wfile, "a1,");
                
                foreach($a1 as $value)
                {
-                  fwrite($wfile, "$value ");
+                  fwrite($wfile, "$value,");
                }
 
-               fwrite($wfile, "a2 ");
+               fwrite($wfile, "a2,");
                
                foreach($a2 as $value)
                {
-                  fwrite($wfile, "$value ");
+                  fwrite($wfile, "$value,");
                }
                
-               fwrite($wfile, "a3 ");
+               fwrite($wfile, "a3,");
                
                foreach($a3 as $value)
                {
-                  fwrite($wfile, "$value ");
+                  fwrite($wfile, "$value,");
                }
 
-               fwrite($wfile, "a4 ");
+               fwrite($wfile, "a4,");
                
                foreach($a4 as $value)
                {
@@ -168,7 +158,7 @@
                   }
                   else
                   {
-                     fwrite($wfile, "$value ");
+                     fwrite($wfile, "$value,");
                   }
                }   
                
