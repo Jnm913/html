@@ -1,79 +1,173 @@
 body{
-    padding-top: 50px;
-    padding-bottom: 20px;
-    background-color: black;
+   padding-top: 50px;
+   padding-bottom: 20px;
+   background-color: black;
 }
 
 .navbar {
-    background-color: inherit;
-    color: #397a2a;
-    border: none;
+   background-color: inherit;
+   color: #397a2a;
+   border: none;
 }
 
 
 /*This is the css for the navbar hovers and links*/
 .navbar-default .navbar-header > a {
-  color: lawngreen;
+   color: lawngreen;
 }
 
 .navbar-default .navbar-header > a:hover,
 .navbar-default .navbar-header > a:focus {
-  color: lawngreen;
+   color: lawngreen;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: lawngreen;
+   color: lawngreen;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #397a2a;
+   color: #397a2a;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-    background-color: #2a2a2a;
-    color: #397a2a;
+   background-color: #2a2a2a;
+   color: #397a2a;
 }
+
+.navbar-right {
+   padding-right: 20px;
+} 
+
 
 /*This is the css for the little icon the appears for small screens*/
 .navbar-default .navbar-toggle {
-    border-color: lawngreen;
+   border-color: lawngreen;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #2a2a2a;
-    border-color: #397a2a;
+   background-color: #2a2a2a;
+   border-color: #397a2a;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-     background-color: lawngreen;
+   background-color: lawngreen;
 }
 
 
 
 /* continer*/
 @media (min-width: 768px) {
-    .continer {
-        max-width: 730px;
-    }
+   .continer {
+      max-width: 730px;
+   }
 }
 .continer-narrow > hr {
-    margin: 30px 0;
+   margin: 30px 0;
 }
 
 .container {
-    background-color: #2a2a2a;
-    color: #397a2a;
+   background-color: #2a2a2a;
+   color: #397a2a;
 }
 
 
 /*Jumbotron style*/
 .jumbotron {
-    text-align: center;
-    background-color: inherit;
+   text-align: center;
+   background-color: inherit;
+}
+
+/*JMC Adds*/
+.carousel_section {
+	text-align: center;
+   background-color: inherit;
+}
+
+/* Carousel base class */
+   .carousel {
+      margin-bottom: 60px;
+   }
+
+   .carousel .container {
+      position: relative;
+      z-index: 9;
+   }
+
+   .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+      position: absolute;
+      top: 20%;
+      left: 15px;
+      width: 40px;
+      text-align: center;
+   }
+
+   .carousel-control.left{
+      background-image: none;
+   }
+   
+   .carousel-control.right{
+      background-image: none;
+   }
+   
+   .carousel-inner{
+      width: 600px;
+      height: 400px;
+   }
+   
+   .carousel-inner .item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      /*background-attachment: scroll;*/
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 600px 400px;
+      /*text-align: center;
+      max-height: 2000px;*/
+   }
+   
+   .carousel img {
+      /*display: inline-block;
+      width: auto;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+	  width="2737" height="1960"*/
+   }
+
+   .carousel-caption h1,
+   .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+   }
+   .carousel-caption .btn {
+      margin-top: 10px;
+   }
+
+/*End of JMC*/
+
+/*for the packages div*/
+.packages{
+   text-align: left;
+   background-color: inherit;
 }
 
 /*phpSurvay*/
