@@ -2,7 +2,11 @@
 
    session_start();
    
-   if(!session_is_registered(myusername))
+   if($_SESSION['myusername'])
+   {
+      $user = $_SESSION['myusername'];
+   }
+   else
    {
       header("location:login.php");
    }
@@ -17,7 +21,7 @@
     
       
       <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="../css/main.css" rel="stylesheet" />
+      <link href="../css/photo.css" rel="stylesheet" />
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,7 +40,7 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">McCurdyPhotography</a>
+            <img class="navbar-brand" src="../images/logo35.png" alt="logo"></img>
         </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -188,7 +192,7 @@
                   $imageID = htmlspecialchars($_POST['imageID']);
                
                   //debug
-                  echo "the slidesID2: $slidesID2 <br /> the imageID: $imageID\n";
+                  //echo "the slidesID2: $slidesID2 <br /> the imageID: $imageID\n";
                   
                   $mysqli->query("DELETE FROM show_images WHERE slidesId='$slidesID2' AND imageId='$imageID'");
                   

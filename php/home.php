@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Home of Jeremy McCurdy</title>
+      <title>McCurdyPhotography</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap -->
     
@@ -32,7 +32,7 @@
          <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-               <li><a href="home.php">Home</a></li>
+               <li Class="active"><a href="home.php">Home</a></li>
                <li><a href="nichole.php">Nichole</a></li>
                <li><a href="weddings.php">Weddings</a></li>
                <li><a href="engagements.php">Engagements</a></li>
@@ -50,34 +50,15 @@
       <div class="container">
          <!-- Main component for a primary marketing message or call to action -->
          <div class="jumbotron">
-            <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-               <tr>
-                  <form name="Form1" method="post" action="checkLogin.php">
-                     <td>
-                        <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-                           <tr>
-                              <td colspan="3"><strong>Login</strong></td>
-                           </tr>
-                           <tr>
-                              <td width="78">Username</td>
-                              <td width="6">:</td>
-                              <td width="294"><input name="myusername" type="text" id="myusername"></td>
-                           </tr>
-                           <tr>
-                              <td>Password</td>
-                              <td>:</td>
-                              <td><input name="mypassword" type="text" id="mypassword"></td>
-                           </tr>
-                           <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td><input type="submit" name="Submit" value="Login"></td>
-                           </tr>
-                        </table>
-                     </td>
-                  </form>
-               </tr>
-            </table>
+         
+            <div>
+               <img class="images" src="../images/wordsLogoSmall.png" alt="McCurdy Photography" />
+            </div>
+            <p class="images">"Capturing moments that will last forever and are impossible to reproduce"</p>
+            <br />
+            <img class="images" src="../images/Nichole.jpg" alt="Nichole and Family" />
+         </div>
+      </div>
       <footer>
           <div class="footer">
               <ul>

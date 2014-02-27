@@ -1,3 +1,9 @@
+<?php
+
+   session_start();
+   
+?>
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -7,7 +13,7 @@
     
       
       <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="../css/main.css" rel="stylesheet" />
+      <link href="../css/photo.css" rel="stylesheet" />
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,15 +32,20 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">McCurdyPhotography</a>
+            <img class="navbar-brand" src="../images/logo35.png" alt="logo"></img>
         </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-               <li><a href="">Home</a></li>
-               <li><a href="template.php">Engagements</a></li>
-               <li><a href="">Other</a></li>
+               <li><a href="home.php">Home</a></li>
+               <li><a href="nichole.php">Nichole</a></li>
+               <li><a href="weddings.php">Weddings</a></li>
+               <li><a href="engagements.php">Engagements</a></li>
+               <li><a href="seniors.php">Seniors</a></li>
+               <li><a href="contact.php">Contact</a></li>
+               <li><a href="prices.php">Prices</a></li>
+               <li><a href="faq.php">FAQ</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="login.php">Login  </a></li>
@@ -75,10 +86,7 @@
                </tr>
             </table>
          
-         
-         
-         
-         
+
             <?php
                require "../NotGit/names.php";
                
@@ -94,24 +102,20 @@
                $myusername = htmlspecialchars($_POST['myusername']); 
                $mypassword = htmlspecialchars($_POST['mypassword']); 
 
-               //echo "username: $myusername <br> password: $mypassword <br>";
+               //echo "user: $myusername  and pass: $mypassword\n";
                
-               // To protect MySQL injection (more detail about MySQL injection)
-               // $myusername = stripslashes($myusername);
-               // $mypassword = stripslashes($mypassword);
-               // $myusername = mysql_real_escape_string($myusername);
-               // $mypassword = mysql_real_escape_string($mypassword);
-       
-               $result = $mysqli->query("SELECT * FROM user WHERE username='$myusername' and password='$mypassword'");
+               
+               $result = $mysqli->query("SELECT * FROM user WHERE username='$myusername'");
  
                // check the username and password
                $row = $result->fetch_assoc();
+               
                // if they match then register
                if ($row['username'] == $myusername and $row['password'] == $mypassword)
                {                  
                   //Register $myusername, $mypassword and redirect to file "login_success.php"
-                  session_register("myusername");
-                  session_register("mypassword"); 
+                  $_SESSION['myusername'] = $myusername;
+                  //echo "User from data:" . $row['username'] . "  and data pass: " . $row['password'] . " ";
                   header("location:login_success.php");
                }
                else 

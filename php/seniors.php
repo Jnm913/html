@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Home of Jeremy McCurdy</title>
+      <title>McCurdyPhotography</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap -->
     
@@ -26,7 +26,7 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">McCurdyPhotography</a>
+            <img class="navbar-brand" src="../images/logo35.png" alt="logo"></img>
         </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,7 +36,7 @@
                <li><a href="nichole.php">Nichole</a></li>
                <li><a href="weddings.php">Weddings</a></li>
                <li><a href="engagements.php">Engagements</a></li>
-               <li><a href="seniors.php">Seniors</a></li>
+               <li Class="active"><a href="seniors.php">Seniors</a></li>
                <li><a href="contact.php">Contact</a></li>
                <li><a href="prices.php">Prices</a></li>
                <li><a href="faq.php">FAQ</a></li>
@@ -62,7 +62,7 @@
                   echo "Failed to connect to MySQL: " . $mysqli->connect_error;
                }
             
-               $name = "Engagements";
+               $name = "Seniors";
             
                $slides = $mysqli->query("select * from slides AS s JOIN quote AS q ON s.quoteID = q.id where s.name = '$name'");
             

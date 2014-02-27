@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Home of Jeremy McCurdy</title>
+      <title>McCurdyPhotography</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap -->
     
@@ -38,7 +38,7 @@
                <li><a href="engagements.php">Engagements</a></li>
                <li><a href="seniors.php">Seniors</a></li>
                <li><a href="contact.php">Contact</a></li>
-               <li><a href="prices.php">Prices</a></li>
+               <li Class="active"><a href="prices.php">Prices</a></li>
                <li><a href="faq.php">FAQ</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -50,34 +50,32 @@
       <div class="container">
          <!-- Main component for a primary marketing message or call to action -->
          <div class="jumbotron">
-            <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-               <tr>
-                  <form name="Form1" method="post" action="checkLogin.php">
-                     <td>
-                        <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-                           <tr>
-                              <td colspan="3"><strong>Login</strong></td>
-                           </tr>
-                           <tr>
-                              <td width="78">Username</td>
-                              <td width="6">:</td>
-                              <td width="294"><input name="myusername" type="text" id="myusername"></td>
-                           </tr>
-                           <tr>
-                              <td>Password</td>
-                              <td>:</td>
-                              <td><input name="mypassword" type="text" id="mypassword"></td>
-                           </tr>
-                           <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td><input type="submit" name="Submit" value="Login"></td>
-                           </tr>
-                        </table>
-                     </td>
-                  </form>
-               </tr>
-            </table>
+         
+            <?php
+               require "../NotGit/names.php";
+               
+               //start the connection
+               $mysqli = new mysqli($connect, $username, $password, "cs313");
+
+               if ($mysqli->connect_errno) 
+               { 
+                  echo "Failed to connect to MySQL: " . $mysqli->connect_error;
+               }
+               
+               echo "<h1>Pricing</h1>\n";
+               
+               $packages = $mysqli->query("select * from package");
+                
+                while ($row = $packages->fetch_assoc())  
+               {
+                  echo "<p class='boldQuestion'>Package " . $row['id'] . " : $" . $row['price'] . "</p>\n";  
+                  
+                  echo "<p class='text'>" . $row['description'] . "</p>\n <br />";
+                  
+               } 
+            ?>
+         </div>
+      </div>
       <footer>
           <div class="footer">
               <ul>

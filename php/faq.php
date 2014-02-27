@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Home of Jeremy McCurdy</title>
+      <title>McCurdyPhotography</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap -->
     
@@ -39,7 +39,7 @@
                <li><a href="seniors.php">Seniors</a></li>
                <li><a href="contact.php">Contact</a></li>
                <li><a href="prices.php">Prices</a></li>
-               <li><a href="faq.php">FAQ</a></li>
+               <li Class="active"><a href="faq.php">FAQ</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="login.php">Login  </a></li>
@@ -50,34 +50,24 @@
       <div class="container">
          <!-- Main component for a primary marketing message or call to action -->
          <div class="jumbotron">
-            <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-               <tr>
-                  <form name="Form1" method="post" action="checkLogin.php">
-                     <td>
-                        <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-                           <tr>
-                              <td colspan="3"><strong>Login</strong></td>
-                           </tr>
-                           <tr>
-                              <td width="78">Username</td>
-                              <td width="6">:</td>
-                              <td width="294"><input name="myusername" type="text" id="myusername"></td>
-                           </tr>
-                           <tr>
-                              <td>Password</td>
-                              <td>:</td>
-                              <td><input name="mypassword" type="text" id="mypassword"></td>
-                           </tr>
-                           <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td><input type="submit" name="Submit" value="Login"></td>
-                           </tr>
-                        </table>
-                     </td>
-                  </form>
-               </tr>
-            </table>
+         
+            <h1>FAQ</h1>
+            <ul class="text">
+               <li class="boldQuestion">Should my family coordinate colors?</li>
+               <p>I think it's much more important to coordinate style, than colors, but if you are going to coordinate colors, do it with more than two colors.  HOWEVER, there are always exceptions.  There's something about the really large, family reunion shot, that looks really good in black shirts, and khaki bottoms.  Most of the time, though, if you're going to choose a color scheme, choose a scheme of three or four colors for your family.  That will keep your picture from looking too stuffy, and void of personality.</p>
+               <li class="boldQuestion">Does Nichole only work outdoors?</li>
+               <p>Right now...yes.  I am a natural light photographer.  The exception being infants. I (almost) always photograph infants indoors, with a warm heated environment.</p>
+               <li class="boldQuestion">What time of day is best?</li>
+               <p>Mornings and evenings, and if there are clouds in the sky...all the better!</p>
+               <li class="boldQuestion">Does Nichole pick the location, or should I?</li>
+               <p>Let's talk about it together.  I love your ideas, and I have some too. I look for nice even shade, to shoot in...a porch, the shaded side of a building, an open alley, under the sun-dappled tree. So, when you are thinking of locations, please keep in mind that there must be some open shade available.</p>
+               <li class="boldQuestion">What is the best age for the newborn infant shot?</li>
+               <p>I'm only half joking when I tell you I'll meet you on your way home from the hospital. Newborns photograph best, asleep, and newborns sleep like crazy for their first several days of life. Ideally, the newborn photos are taken around day 5.</p>
+               <li class="boldQuestion">Are you the right wedding photographer for me?</li>
+               <p>Yes, if you can offer me an hour of alone time with the bride and groom. If I can't have the bride and groom for an hour, then I am probably not the right wedding photographer for you. I will do group shots as well don't worry about that but I like to work with just the bride and groom and get all the photos that they want specifically of just the two of them.</p>
+            </ul>
+         </div>
+      </div>
       <footer>
           <div class="footer">
               <ul>
