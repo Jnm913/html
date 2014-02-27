@@ -1,40 +1,60 @@
 body{
    padding-top: 50px;
    padding-bottom: 20px;
-   background-color: black;
+   background-color: white;
 }
 
 .navbar {
    background-color: inherit;
-   color: #397a2a;
+   color: #2794b1; /*blue*/
    border: none;
+   font-weight: bold;
+}
+
+.boldQuestion{
+   text-align: left;
+   font-size: 24pt;
+   font-style: bold;
+}
+
+.text {
+   text-align: left;
 }
 
 
+
 /*This is the css for the navbar hovers and links*/
+.navbar-default .navbar-brand {
+   padding-top: 5px;
+   padding-bottom: 0px;
+   padding-right: 10px;
+   padding-left: 10px;
+   
+}
+
 .navbar-default .navbar-header > a {
-   color: lawngreen;
+   color: #3da743; /*green*/
 }
 
 .navbar-default .navbar-header > a:hover,
 .navbar-default .navbar-header > a:focus {
-   color: lawngreen;
+   color: #3da743; /*green*/
 }
 
 .navbar-default .navbar-nav > li > a {
-   color: lawngreen;
+   color: #3da743; /*green*/ 
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-   color: #397a2a;
+   color: #2794b1; /*blue*/
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-   background-color: #2a2a2a;
-   color: #397a2a;
+   background-color: #49311c; /*brown*/
+   color: #2794b1; /*blue*/
 }
 
 .navbar-right {
@@ -44,17 +64,17 @@ body{
 
 /*This is the css for the little icon the appears for small screens*/
 .navbar-default .navbar-toggle {
-   border-color: lawngreen;
+   border-color: #3da743; /*green*/
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-   background-color: #2a2a2a;
-   border-color: #397a2a;
+   background-color: #49311c; /*brown*/
+   border-color: #2794b1; /*blue*/
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-   background-color: lawngreen;
+   background-color: #3da743; /*green*/
 }
 
 
@@ -70,8 +90,8 @@ body{
 }
 
 .container {
-   background-color: #2a2a2a;
-   color: #397a2a;
+   background-color: #49311c; /*brown*/
+   color: #2794b1; /*blue*/
 }
 
 
@@ -206,7 +226,7 @@ body{
     font-size: small;
     font-style: italic;
     text-align: center;
-    color: #397a2a;
+    color: #2794b1; /*blue*/
 }
 
 /*assignments list style*/
